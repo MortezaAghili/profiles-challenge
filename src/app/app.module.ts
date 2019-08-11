@@ -5,11 +5,13 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { appRoutes } from "./routes";
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
+    UsersModule
   ],
   declarations: [
     AppComponent,

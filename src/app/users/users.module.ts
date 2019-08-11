@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+import { UsersRepositoryService } from './services/users.repository.service';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  imports: [ ],
+  imports: [
+    HttpClientModule,
+    SharedModule
+   ],
   declarations: [
   ],
   exports: [ ],
-  providers: [ ]
+  providers: [
+    HttpClientModule,
+    UsersRepositoryService
+  ]
 })
 
 export class UsersModule { }
