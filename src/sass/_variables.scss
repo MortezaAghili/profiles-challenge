@@ -1,0 +1,33 @@
+$grey: #f3f3f3;
+$blue: #04A9F4;
+$lightBlue: #04A9F4;
+$white: #ffffff;
+$light: #F5F5F5;
+$dark: #000000;
+$yellow: #d1ab41;
+
+$primary-color: $blue;
+$primary-color-dark: darken($primary-color, 8);
+$primary-color-light: lighten($primary-color, 10);
+$secondary-color: $yellow;
+
+$primary-link: $blue;
+$secondary-link: $lightBlue;
+
+$primary-title: $light;
+$secondary-title: $yellow;
+
+$grid-breakpoints: (
+  xs: 0, // handset portrait (small, medium, large) | handset landscape (small)
+  sm: 600px, // handset landscape (medium, large) | tablet portrait(small, large)
+  md: 960px, //  tablet landscape (small, large)
+  lg: 1280px, // laptops and desktops
+  xl: 1600px // large desktops
+);
+
+$container-max-widths: (
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1600px
+);

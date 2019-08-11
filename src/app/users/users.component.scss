@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins";
+
+header {
+  background-color: $primary-color;
+  color: $light;
+  padding-top: 2em;
+  margin-bottom: 2em;
+
+  h1 {
+    font-weight: normal;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+}
+
+// customize material components' styles
+::ng-deep {
+  .mat-form-field {
+    .mat-icon {
+      margin: auto 0.5em;
+      color: darken($light, 30);
+    }
+    .mat-form-field-label-wrapper {
+      top: -1.2em;
+    }
+    .mat-form-field-underline {
+      background-color: $white;
+    }
+    .mat-form-field-flex {
+      background: $white;
+      color: $dark;
+    }
+    &.mat-focused{
+      .mat-form-field-label-wrapper {
+        top: -0.9em;
+      }
+    }
+    &.mat-form-field-should-float{
+      .mat-form-field-label-wrapper {
+        top: -0.9em;
+      }
+    }
+  }
+}
+
+table {
+  width: 100%;
+
+  img{
+    border-radius: 50%;
+    max-height: 4em;
+  }
+
+  th{
+    color: $dark;
+  }
+
+  a .mat-icon{
+    color: darken($light, 50);
+  }
+}
+
+@include mat-table-columns((
+    view: (width: 10rem)
+));
+
+.mat-column-view{
+  text-align: right;
+}
