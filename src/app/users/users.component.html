@@ -12,8 +12,9 @@
   </div>
 </header>
 
+<app-loading-spinner [loading]="!dataSource"></app-loading-spinner>
 <div class="container">
-  <div class="mat-elevation-z8">
+  <div class="mat-elevation-z8" *ngIf="dataSource" [@simpleFadeAnimation]="'in'">
     <table mat-table [dataSource]="dataSource" matSort>
       <!-- Photo Column -->
       <ng-container matColumnDef="photo">

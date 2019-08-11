@@ -22,6 +22,7 @@ import { appRoutes } from "./routes";
 import { UsersModule } from './users/users.module';
 import { UserDetailModule } from './user-detail/user-detail.module';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     MatTabsModule,
     MatCardModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    SharedModule
   ],
   declarations: [
     AppComponent,
