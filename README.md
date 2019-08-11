@@ -1,4 +1,21 @@
-# Ireckonu
+# Ireckonu  
+[![Build Status](https://travis-ci.org/MortezaAghili/profiles-challenge.svg?branch=master)](https://travis-ci.org/MortezaAghili/profiles-challenge)  
+
+[Demo](https://mortezaaghili.github.io/profiles-challenge/)  
+
+### Tech:
+- Angular 8
+- TypeScript
+- RxJS
+- Karma, Jasmine
+- Sass (SCSS)
+- AngularInMemoryWebAPI
+- Angular Animations
+- Angular Material
+- Bootstrap
+ 
+
+> The `CI/CD` pipeline handed over `TravisCI` and `GitHub Pages`. check `.travis.yml` for more information about how the configs are. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
