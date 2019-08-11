@@ -11,18 +11,24 @@ import { MatInputModule } from "@angular/material";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSortModule } from "@angular/material/sort";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatCardModule } from "@angular/material/card";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatListModule } from "@angular/material/list";
 
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { appRoutes } from "./routes";
 import { UsersModule } from './users/users.module';
-
+import { UserDetailModule } from './user-detail/user-detail.module';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
     UsersModule,
+    UserDetailModule,
     MatTableModule,
     MatPaginatorModule,
     MatFormFieldModule,
@@ -30,11 +36,16 @@ import { UsersModule } from './users/users.module';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatSortModule
+    MatSortModule,
+    MatTabsModule,
+    MatCardModule,
+    MatListModule,
+    MatDividerModule
   ],
   declarations: [
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    UserDetailComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

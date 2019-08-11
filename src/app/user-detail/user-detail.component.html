@@ -1,0 +1,164 @@
+<header>
+  <div class="container">
+    <h1>
+      Profile:
+      <img *ngIf="user" [src]="user.photo" />
+      <span *ngIf="user">{{ user.first_name }} {{ user.last_name }}</span>
+    </h1>
+  </div>
+</header>
+
+<div class="user-detail-container container">
+  <div class="row">
+    <div class="col-sm-3">
+      <mat-card>
+        <p class="title">quick facts</p>
+        <div class="info-box">
+          <div class="info-box-header">
+            <span>stauts</span>
+            <a href="#">
+              <mat-icon>open_in_new</mat-icon>
+            </a>
+          </div>
+          <div class="info-box-body">
+            <mat-icon class="orange">account_box</mat-icon>
+            <div>
+              <p>ID: SH051545</p>
+              <p>Tier: Gold</p>
+              <p>Pts: 125,024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-box-header">
+            <span>top 3 facts</span>
+            <a href="#">
+              <mat-icon>open_in_new</mat-icon>
+            </a>
+          </div>
+          <div class="info-box-body">
+            <mat-icon>error</mat-icon>
+            <div>
+              <p>Suite room</p>
+              <p>King bed</p>
+              <p>Highest floot</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-box-header">
+            <span>RFM Score</span>
+            <a href="#">
+              <mat-icon>open_in_new</mat-icon>
+            </a>
+          </div>
+          <div class="info-box-body">
+            <div class="circular-progress"></div>
+            <p class="items">
+              <span>R: 70%</span>
+              <span>F: 50%</span>
+              <span>M: 90%</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="info-box-header">
+            <span>other facts</span>
+            <a href="#">
+              <mat-icon>open_in_new</mat-icon>
+            </a>
+          </div>
+          <div class="info-box-body">
+            <ul class="items-with-icons">
+              <li>
+                <img src="../../assets/images/icons/calendar.svg" />
+                <span class="title">total stays:</span>
+                <span class="value">24</span>
+              </li>
+              <li>
+                <img src="../../assets/images/icons/sleep-mode.svg" />
+                <span class="title">nights:</span>
+                <span class="value">32</span>
+              </li>
+              <li>
+                <img src="../../assets/images/icons/bed.svg" />
+                <span class="title">avg stay:</span>
+                <span class="value">1.33 nights</span>
+              </li>
+              <li>
+                <img src="../../assets/images/icons/calendar.svg" />
+                <span class="title">last visit:</span>
+                <span class="value">2018-08-15</span>
+              </li>
+              <li>
+                <img src="../../assets/images/icons/money.svg" />
+                <span class="title">lifetime value:</span>
+                <span class="value">$3080.29</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-sm-9">
+      <mat-tab-group>
+        <mat-tab label="Profile Detail">
+          <mat-card>
+            <div class="profile-detail-box" *ngIf="user">
+              <span>profile detail</span>
+              <mat-card>
+                <ul>
+                  <li>
+                    <span class="title">prefix</span>
+                    <span class="value">{{ user.prefix }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">first name</span>
+                    <span class="value">{{ user.first_name }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">last name</span>
+                    <span class="value">{{ user.last_name }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">suffix</span>
+                    <span class="value">{{ user.suffix }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">loyaly member ID</span>
+                    <span class="value">{{ user.loyalty_member_id }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">phone</span>
+                    <span class="value">{{ user.phone }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">address</span>
+                    <span class="value">{{ user.address }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                  <li>
+                    <span class="title">birthdate</span>
+                    <span class="value">{{ user.birthdate }}</span>
+                    <mat-icon>edit</mat-icon>
+                  </li>
+                </ul>
+              </mat-card>
+            </div>
+          </mat-card>
+        </mat-tab>
+        <mat-tab label="Profile ID's"> Content 2 </mat-tab>
+        <mat-tab label="Activity Timeline"> Content 3 </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
