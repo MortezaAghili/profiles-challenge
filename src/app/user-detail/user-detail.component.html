@@ -2,7 +2,7 @@
   <div class="container">
     <h1 [@simpleFadeAnimation]="'in'">
       Profile:
-      <img *ngIf="user" [src]="user.photo" />
+      <img *ngIf="user" [src]="user.photo" alt="avatar" />
       <span *ngIf="user">{{ user.first_name }} {{ user.last_name }}</span>
     </h1>
   </div>
@@ -74,27 +74,27 @@
           <div class="info-box-body">
             <ul class="items-with-icons">
               <li>
-                <img src="./assets/images/icons/calendar.svg" />
+                <img src="./assets/images/icons/calendar.svg" alt="calengar icon"/>
                 <span class="title">total stays:</span>
                 <span class="value">24</span>
               </li>
               <li>
-                <img src="./assets/images/icons/sleep-mode.svg" />
+                <img src="./assets/images/icons/sleep-mode.svg" alt="moon icon"/>
                 <span class="title">nights:</span>
                 <span class="value">32</span>
               </li>
               <li>
-                <img src="./assets/images/icons/bed.svg" />
+                <img src="./assets/images/icons/bed.svg" alt="bed icon"/>
                 <span class="title">avg stay:</span>
                 <span class="value">1.33 nights</span>
               </li>
               <li>
-                <img src="./assets/images/icons/calendar.svg" />
+                <img src="./assets/images/icons/calendar.svg" alt="calengar icon"/>
                 <span class="title">last visit:</span>
                 <span class="value">2018-08-15</span>
               </li>
               <li>
-                <img src="./assets/images/icons/money.svg" />
+                <img src="./assets/images/icons/money.svg" alt="money icon"/>
                 <span class="title">lifetime value:</span>
                 <span class="value">$3080.29</span>
               </li>
