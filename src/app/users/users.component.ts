@@ -40,8 +40,10 @@ export class UsersComponent implements OnInit {
     this.setDataSourceAttributes();
   }
   setDataSourceAttributes() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    if(this.dataSource){
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+    }
   }
 
   constructor(
